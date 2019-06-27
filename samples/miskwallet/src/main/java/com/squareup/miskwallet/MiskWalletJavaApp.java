@@ -1,4 +1,4 @@
-package com.squareup.exemplar;
+package com.squareup.miskwallet;
 
 import com.google.common.collect.ImmutableList;
 import misk.MiskApplication;
@@ -10,17 +10,17 @@ import misk.environment.EnvironmentModule;
 import misk.resources.ResourceLoader;
 import misk.web.MiskWebModule;
 
-public class ExemplarJavaApp {
+public class MiskWalletJavaApp {
   public static void main(String[] args) {
     Environment environment = Environment.fromEnvironmentVariable();
-    ExemplarJavaConfig config = MiskConfig.load(ExemplarJavaConfig.class, "exemplar",
+    MiskWalletJavaConfig config = MiskConfig.load(MiskWalletJavaConfig.class, "miskwallet",
         environment, ImmutableList.of(), ResourceLoader.Companion.getSYSTEM());
 
     new MiskApplication(
         new MiskRealServiceModule(),
         new MiskWebModule(config.web),
-        new ExemplarJavaModule(),
-        new ConfigModule<>(ExemplarJavaConfig.class, "exemplar", config),
+        new MiskWalletJavaModule(),
+        new ConfigModule<>(MiskWalletJavaConfig.class, "miskwallet", config),
         new EnvironmentModule(environment)
     ).run(args);
   }

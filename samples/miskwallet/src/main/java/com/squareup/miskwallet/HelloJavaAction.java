@@ -1,4 +1,4 @@
-package com.squareup.exemplar;
+package com.squareup.miskwallet;
 
 import javax.inject.Singleton;
 import misk.web.Get;

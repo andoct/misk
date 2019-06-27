@@ -1,4 +1,4 @@
-package com.squareup.exemplar.actions
+package com.squareup.miskwallet.actions
 
 import misk.web.Get
 import misk.web.PathParam

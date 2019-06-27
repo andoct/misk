@@ -1,5 +1,6 @@
-package com.squareup.exemplar
+package com.squareup.miskwallet
 
+import com.squareup.miskwallet.scaffolding.StorageModule
 import misk.MiskApplication
 import misk.MiskRealServiceModule
 import misk.config.ConfigModule
@@ -11,13 +12,14 @@ import misk.web.MiskWebModule
 
 fun main(args: Array<String>) {
   val environment = Environment.fromEnvironmentVariable()
-  val config = MiskConfig.load<ExemplarConfig>("exemplar", environment)
+  val config = MiskConfig.load<MiskWalletConfig>("miskwallet", environment)
   MiskApplication(
       MiskRealServiceModule(),
       MiskWebModule(config.web),
-      ExemplarModule(),
-      ConfigModule.create("exemplar", config),
+      MiskWalletModule(),
+      ConfigModule.create("miskwallet", config),
       EnvironmentModule(environment),
-      PrometheusMetricsModule(config.prometheus)
+      PrometheusMetricsModule(config.prometheus),
+      StorageModule(config)
   ).run(args)
 }

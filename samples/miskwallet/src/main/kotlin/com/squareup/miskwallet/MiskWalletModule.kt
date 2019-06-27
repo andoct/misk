@@ -1,12 +1,12 @@
-package com.squareup.exemplar
+package com.squareup.miskwallet
 
-import com.squareup.exemplar.actions.EchoFormAction
-import com.squareup.exemplar.actions.HelloWebAction
-import com.squareup.exemplar.actions.HelloWebPostAction
+import com.squareup.miskwallet.actions.EchoFormAction
+import com.squareup.miskwallet.actions.HelloWebAction
+import com.squareup.miskwallet.actions.HelloWebPostAction
 import misk.inject.KAbstractModule
 import misk.web.WebActionModule
 
-class ExemplarModule : KAbstractModule() {
+class MiskWalletModule : KAbstractModule() {
   override fun configure() {
     install(WebActionModule.create<HelloWebAction>())
     install(WebActionModule.create<HelloWebPostAction>())

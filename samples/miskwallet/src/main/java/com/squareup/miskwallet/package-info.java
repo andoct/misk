@@ -1,4 +1,4 @@
 @ParametersAreNonnullByDefault
-package com.squareup.exemplar;
+package com.squareup.miskwallet;
 
 import javax.annotation.ParametersAreNonnullByDefault;

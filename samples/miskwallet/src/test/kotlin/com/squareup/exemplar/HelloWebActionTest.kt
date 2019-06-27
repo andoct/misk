@@ -1,7 +1,7 @@
-package com.squareup.exemplar
+package com.squareup.miskwallet
 
-import com.squareup.exemplar.actions.HelloResponse
-import com.squareup.exemplar.actions.HelloWebAction
+import com.squareup.miskwallet.actions.HelloResponse
+import com.squareup.miskwallet.actions.HelloWebAction
 import misk.testing.MiskTest
 import okhttp3.Headers
 import org.assertj.core.api.Assertions.assertThat

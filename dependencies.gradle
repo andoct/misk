@@ -3,6 +3,7 @@ ext.dep = [
   "assertj": "org.assertj:assertj-core:3.9.0",
   "awsApi": "com.amazonaws:aws-java-sdk:1.11.144",
   "awsSqs": "com.amazonaws:aws-java-sdk-sqs:1.11.144",
+  "bitcoinj": "org.bitcoinj:bitcoinj-core:0.15.2",
   "bouncycastle": "org.bouncycastle:bcprov-jdk15on:1.55",
   "curatorFramework": "org.apache.curator:curator-framework:4.0.1",
   "datasourceProxy": "net.ttddyy:datasource-proxy:1.4.9",
