@@ -12,6 +12,7 @@ sourceSets {
 dependencies {
   compile dep.kotlinStdLib
   compile dep.kotlinTest
+  compile dep.bitcoinj
   compile dep.bouncycastle
   compile dep.guava
   compile dep.guice

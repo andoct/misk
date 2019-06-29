@@ -1,0 +1,18 @@
+* Design with multisig in mind. Data model needs to accommodate.
+* Figure out how to generate multi-sig addresses
+* Decide that maybe we only persist the account level pub/prv
+  - Re-read hardened nuances to decide this ^^
+  - Cannot derive a hardened key from a public key because the private key is used as input when
+    creating a hardened child.
+
+
+Importing pubkeys for multisig from other wallets. Use Bip32 pub/prv format
+DeterministicKey#deserializeB58
+DeterministicKey#deserialize (bytes)
+  Check for prefix to indicate public or private
+
+BIP 45 for multisig
+m / purpose' / cosigner_index / change / address_index
+purpose = 45'
+Won't be compatible with our existing setup but we can use this for new multisig.
+

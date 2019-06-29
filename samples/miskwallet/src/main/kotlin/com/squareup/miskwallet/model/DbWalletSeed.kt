@@ -10,11 +10,11 @@ import javax.persistence.GeneratedValue
 import javax.persistence.Table
 
 @Entity
-@Table(name = "wallet_key_trees")
-class DbWalletKeyTree() : DbUnsharded<DbWalletKeyTree>, DbTimestampedEntity {
+@Table(name = "wallet_seeds")
+class DbWalletSeed() : DbUnsharded<DbWalletSeed>, DbTimestampedEntity {
   @javax.persistence.Id
   @GeneratedValue
-  override lateinit var id: Id<DbWalletKeyTree>
+  override lateinit var id: Id<DbWalletSeed>
 
   @Column(nullable = false, updatable = false)
   lateinit var seed: ByteArray

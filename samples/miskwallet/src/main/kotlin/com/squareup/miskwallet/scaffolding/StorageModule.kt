@@ -1,7 +1,7 @@
 package com.squareup.miskwallet.scaffolding
 
 import com.squareup.miskwallet.MiskWalletConfig
-import com.squareup.miskwallet.model.DbWalletKeyTree
+import com.squareup.miskwallet.model.DbWalletSeed
 import misk.hibernate.HibernateEntityModule
 import misk.hibernate.HibernateModule
 import misk.inject.KAbstractModule
@@ -17,7 +17,7 @@ class StorageModule(
 
     install(object : HibernateEntityModule(MiskWallet::class) {
       override fun configureHibernate() {
-        addEntities(DbWalletKeyTree::class)
+        addEntities(DbWalletSeed::class)
       }
     })
   }

@@ -22,6 +22,7 @@ class HelloWebAction @Inject constructor() : WebAction {
     @QueryParam nickName: String?,
     @QueryParam greetings: List<String>?
   ): HelloResponse {
+
     return HelloResponse(
         greetings?.joinToString(separator = " ") ?: "YO",
         nickName?.toUpperCase() ?: name.toUpperCase())
