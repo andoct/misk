@@ -5,6 +5,7 @@
   - Cannot derive a hardened key from a public key because the private key is used as input when
     creating a hardened child.
 
+* Delete test DB after tests run
 
 Importing pubkeys for multisig from other wallets. Use Bip32 pub/prv format
 DeterministicKey#deserializeB58
@@ -15,4 +16,5 @@ BIP 45 for multisig
 m / purpose' / cosigner_index / change / address_index
 purpose = 45'
 Won't be compatible with our existing setup but we can use this for new multisig.
+
 

@@ -1,5 +1,7 @@
 CREATE TABLE wallet_seeds (
   id BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  mnemonic TEXT NOT NULL,
+  entropy TINYBLOB NOT NULL,
   seed TINYBLOB NOT NULL,
   created_at timestamp(3) NOT NULL DEFAULT NOW(3),
   updated_at timestamp(3) NOT NULL DEFAULT NOW(3) ON UPDATE NOW(3)
