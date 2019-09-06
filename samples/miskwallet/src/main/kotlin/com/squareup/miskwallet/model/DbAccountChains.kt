@@ -31,6 +31,7 @@ class DbAccountChain() : DbUnsharded<DbAccountChain>, DbTimestampedEntity {
   @Column
   override lateinit var updated_at: Instant
 
+  lateinit var xpub: String
 
 //  id BIGINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 //  wallet_seed_id BIGINT NULL,

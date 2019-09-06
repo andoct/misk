@@ -13,6 +13,11 @@ dependencies {
   compile dep.kotlinStdLib
   compile dep.kotlinTest
   compile dep.bitcoinj
+  compile dep.converterGson
+
+//  WTF
+  compile dep.javaBitcoindRpcClient
+
   compile dep.bouncycastle
   compile dep.guava
   compile dep.guice

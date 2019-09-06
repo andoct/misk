@@ -4,6 +4,7 @@ ext.dep = [
   "awsApi": "com.amazonaws:aws-java-sdk:1.11.144",
   "awsSqs": "com.amazonaws:aws-java-sdk-sqs:1.11.144",
   "bitcoinj": "org.bitcoinj:bitcoinj-core:0.15.2",
+  "converterGson": "com.squareup.retrofit2:converter-gson:2.6.1",
   "bouncycastle": "org.bouncycastle:bcprov-jdk15on:1.55",
   "curatorFramework": "org.apache.curator:curator-framework:4.0.1",
   "datasourceProxy": "net.ttddyy:datasource-proxy:1.4.9",
@@ -30,6 +31,10 @@ ext.dep = [
   "jacksonDataformatYaml": "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.9.3",
   "jacksonJsr310": "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.4",
   "jacksonKotlin": "com.fasterxml.jackson.module:jackson-module-kotlin:2.9.3",
+
+  // https://mvnrepository.com/artifact/wf.bitcoin/JavaBitcoindRpcClient
+  "javaBitcoindRpcClient": "wf.bitcoin:bitcoin-rpc-client:1.1",
+
   "javaxInject": "javax.inject:javax.inject:1",
   "jaxbApi": "javax.xml.bind:jaxb-api:2.3.0",
   "jedis": "redis.clients:jedis:2.9.3",

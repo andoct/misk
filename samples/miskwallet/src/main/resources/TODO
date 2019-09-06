@@ -6,6 +6,7 @@
     creating a hardened child.
 
 * Delete test DB after tests run
+* Write generator for hibernate objects.
 
 Importing pubkeys for multisig from other wallets. Use Bip32 pub/prv format
 DeterministicKey#deserializeB58

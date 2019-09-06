@@ -9,6 +9,7 @@ dependencies {
   compile project(':misk')
   compile project(':misk-prometheus')
   compile project(':misk-hibernate')
+  compile dep.javaBitcoindRpcClient
 
   testCompile project(':misk-testing')
   testCompile project(':misk-hibernate-testing')
