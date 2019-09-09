@@ -92,6 +92,11 @@ class BlockChainInfo {
         var isStatus: Boolean = false
           internal set
       }
+
+      override fun toString(): String {
+        return "SoftForks(id=$id, version=$version, reject=$reject)"
+      }
+
     }
 
     inner class Bip9Softforks {
@@ -141,5 +146,11 @@ class BlockChainInfo {
     }
   }
 
+  override fun toString(): String {
+    return "BlockChainInfo(result=$result, error=$error, id=$id)"
+  }
+
   // inner class Error : JsonRpcErrorResponse()
+
+
 }
